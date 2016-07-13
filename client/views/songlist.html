@@ -1,0 +1,10 @@
+<h2>Song List</h2>
+Below is the list of existing songs
+<ul>
+    <li *ngFor="let song of songs">
+        <h3>{{song.name}}</h3>
+        <ul>
+            <li *ngFor="let instrument of song.instruments">{{instrument.name}} : {{instrument.device}} set to {{instrument.preset}}</li>
+        </ul>
+    </li>
+</ul>
